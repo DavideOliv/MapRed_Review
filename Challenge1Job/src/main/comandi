@@ -1,0 +1,4 @@
+javac -cp $(hadoop classpath) -d ./build java/*
+jar cvf challenge.jar -C ./build .
+
+hadoop jar challenge.jar ChallengeDriver /sample_us.tsv /provatot
